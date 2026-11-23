@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+	 <title>Cooking Tips</title>
+     <link rel="stylesheet" href="style.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+	 <header>
+	
+		<a href="home.html"><img id="logo" src="images/logo.png" alt="Bite&Bond Logo"></a>
+    
+    <nav>
+            <a href="home.html">Home</a>
+            <a href="about_us.html">About us</a>
+            <a href="club-offerings.html">Club Offerings</a>
+            <a href="learn&cook.html" class="active" aria-current="page">Learn&amp;Cook</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="community.html">Community</a>
+            <a href="member-dashboard.html">Member Dashboard</a>
+            <a href="manager-dashboard.html" >Manager Dashboard</a>
+    </nav>
+		
+		
+	</header>
+     <!-- Breadcrumb -->
+        <nav class="breadcrumbs">
+            <a href="home.html">Home</a> &gt;
+            <a href="learn&cook.html">Learn&amp;Cook</a> &gt;
+            <span>Cooking Tips</span>
+        </nav>
+
+         <main >
+
+       
+
+ <section class="bb-intro">
+            <div>
+                <p class="kicker">Cooking Tips</p>
+                <h1>Explore Cooking Tips</h1>
+                <p>Explore recipes, pick up new cooking tips, and inspire your culinary journey.</p>
+            </div>
+
+            <img
+                src="images/cooking-tips.png"
+                alt="Cooking with Bite and Bond"
+            >
+        </section>
+
+
+<!-- Search and Filter -->
+        <!-- Search and Filter -->
+        <div class="bb-tip-filters">
+
+            <label class="visually-hidden" for="tip-search">
+                Search tips
+            </label>
+
+            <input
+                type="search"
+                id="tip-search"
+                placeholder="Search tips..."
+            >
+
+            <label class="visually-hidden" for="tip-category">
+                Category
+            </label>
+
+            <select id="tip-category">
+                <option value="all">All Categories</option>
+                <option>Knife Skills</option>
+                <option>Baking</option>
+                <option>Food Preparation</option>
+                <option>Cooking Techniques</option>
+            </select>
+
+        </div>
+
+        <!-- Cooking Tips -->
+        <section class="bb-tip-flex" aria-label="Cooking tips">
+
+            <!-- Tip 1: Knife Skills -->
+            <article class="bb-tip-card expanded"
+                     id="tip-0"
+                     data-category="Knife Skills">
+
+                <div class="bb-tip-overview">
+                    <img src="images/tip1.png" alt="Knife Skills">
+
+                    <div>
+                        <h2>Knife Skills</h2>
+                        <h3>A safe, steady chopping technique</h3>
+                        <p>Use a stable board and a claw grip for confident, even chopping.</p>
+                    </div>
+                </div>
+
+                <!-- First tip starts expanded -->
+                <details class="bb-tip-disclosure" open>
+
+                    <summary class="bb-tip-toggle">
+                        <span class="bb-read-more">Read More</span>
+                        <span class="bb-show-less">Show Less</span>
+                    </summary>
+
+                    <div id="tip-steps-0" class="bb-tip-steps">
+                        <h3>Step-by-Step Guide</h3>
+
+                        <ol>
+                            <li>
+                                <span>Place a damp cloth under the board.</span>
+                            </li>
+
+                            <li>
+                                <span>Hold the handle firmly and keep fingertips curled.</span>
+                            </li>
+
+                            <li>
+                                <span>Guide the blade with your knuckles.</span>
+                            </li>
+
+                            <li>
+                                <span>Cut slowly into evenly sized pieces.</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                </details>
+            </article>
+
+            <!-- Tip 2: Baking -->
+            <article class="bb-tip-card"
+                     id="tip-1"
+                     data-category="Baking">
+
+                <div class="bb-tip-overview">
+                    <img src="images/tip2.png" alt="Baking">
+
+                    <div>
+                        <h2>Baking</h2>
+                        <h3>Measure for better bakes</h3>
+                        <p>Accurate measurements help your cakes and pastries bake evenly.</p>
+                    </div>
+                </div>
+
+                <details class="bb-tip-disclosure">
+
+                    <summary class="bb-tip-toggle">
+                        <span class="bb-read-more">Read More</span>
+                        <span class="bb-show-less">Show Less</span>
+                    </summary>
+
+                    <div id="tip-steps-1" class="bb-tip-steps">
+                        <h3>Step-by-Step Guide</h3>
+
+                        <ol>
+                            <li>
+                                <span>Read the recipe before starting.</span>
+                            </li>
+
+                            <li>
+                                <span>Weigh flour and sugar for accuracy.</span>
+                            </li>
+
+                            <li>
+                                <span>Bring ingredients to the stated temperature.</span>
+                            </li>
+
+                            <li>
+                                <span>Preheat the oven and use a timer.</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                </details>
+            </article>
+
+            <!-- Tip 3: Food Preparation -->
+            <article class="bb-tip-card"
+                     id="tip-2"
+                     data-category="Food Preparation">
+
+                <div class="bb-tip-overview">
+                    <img src="images/tip3.png" alt="Food Preparation">
+
+                    <div>
+                        <h2>Food Preparation</h2>
+                        <h3>Prepare before you cook</h3>
+                        <p>Organize your ingredients for a calmer cooking experience.</p>
+                    </div>
+                </div>
+
+                <details class="bb-tip-disclosure">
+
+                    <summary class="bb-tip-toggle">
+                        <span class="bb-read-more">Read More</span>
+                        <span class="bb-show-less">Show Less</span>
+                    </summary>
+
+                    <div id="tip-steps-2" class="bb-tip-steps">
+                        <h3>Step-by-Step Guide</h3>
+
+                        <ol>
+                            <li>
+                                <span>Read the full recipe.</span>
+                            </li>
+
+                            <li>
+                                <span>Wash produce and dry it well.</span>
+                            </li>
+
+                            <li>
+                                <span>Measure ingredients into separate bowls.</span>
+                            </li>
+
+                            <li>
+                                <span>Keep raw and ready-to-eat foods separate.</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                </details>
+            </article>
+
+            <!-- Tip 4: Cooking Techniques -->
+            <article class="bb-tip-card"
+                     id="tip-3"
+                     data-category="Cooking Techniques">
+
+                <div class="bb-tip-overview">
+                    <img src="images/tip4.png" alt="Cooking Techniques">
+
+                    <div>
+                        <h2>Cooking Techniques</h2>
+                        <h3>Build flavor with a good sear</h3>
+                        <p>A hot pan and a dry surface help create a golden crust.</p>
+                    </div>
+                </div>
+
+                <details class="bb-tip-disclosure">
+
+                    <summary class="bb-tip-toggle">
+                        <span class="bb-read-more">Read More</span>
+                        <span class="bb-show-less">Show Less</span>
+                    </summary>
+
+                    <div id="tip-steps-3" class="bb-tip-steps">
+                        <h3>Step-by-Step Guide</h3>
+
+                        <ol>
+                            <li>
+                                <span>Pat the surface dry.</span>
+                            </li>
+
+                            <li>
+                                <span>Heat the pan over medium-high heat.</span>
+                            </li>
+
+                            <li>
+                                <span>Add a little suitable cooking oil.</span>
+                            </li>
+
+                            <li>
+                                <span>Leave space between pieces and turn when browned.</span>
+                            </li>
+                        </ol>
+                    </div>
+
+                </details>
+            </article>
+
+        </section>
+
+    </main>
+
+<footer>
+		<div class="footer-container">
+			
+			<div class="footer-col">
+				<div class="footer-logo">
+					<img src="images/logo.png" id="footer-logo" alt="Bite&Bond Logo">
+					<p class="footer-header">Bite&amp;Bond</p>
+				</div>
+				<p>Good Food Brings People Together</p>
+			</div>
+
+			<div class="footer-col">
+				<p class="footer-header">Social Media</p>
+				<ul>
+					<!-- Icons source: https://icons8.com -->
+					<li><img src="images/icons8-facebook.png" alt="facebook">FaceBook</li>
+					<li><img src="images/icons8-Instagram.png" alt="Instagram">Instagram</li>
+					<li><img src="images/icons8-x.png" alt="x">X</li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<p class="footer-header">Contact us</p>
+				<p>Email: <a href="mailto:info@biteandbond.com">info@biteandbond.com</a></p>
+				<p>Phone Number: <a href="tel:+966000000000">+966 00 000 0000</a></p>
+			</div>
+
+			<div class="footer-col newsletter-col">
+				<p class="footer-header">Newsletter</p>
+				<form action="#" method="POST">
+					<input type="email" placeholder="Enter your email" required>
+					<button type="submit">subscribe</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>&copy; 2026 Bite&amp;Bond Food Club. All rights reserved</p>
+		</div>
+	</footer>
+	<script src="community_pages.js"></script>
+    <script src="theme.js"></script>
+
+
+</body>
+
+</html>

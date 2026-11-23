@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and CSS Stylesheet -->
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <!-- Header Navigation Section -->
+    <header>
+        <!-- Logo -->
+        <a href="home.html"><img id="logo" src="images/logo.png" alt="Bite&Bond Logo"></a>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about_us.html" class="active" aria-current="page">About us</a>
+            <a href="club-offerings.html">Club Offerings</a>
+            <a href="learn&cook.html">Learn&amp;Cook</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="community.html">Community</a>
+            <a href="member-dashboard.html">Member Dashboard</a>
+            <a href="manager-dashboard.html">Manager Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Trail -->
+    <nav class="breadcrumbs">
+        <a href="home.html">Home</a> &gt; 
+        <span>About Us</span>
+    </nav>
+
+	<!-- START MAIN HERE -->
+    <main>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div>
+            <h1>Our Mission</h1>
+            <p>At <strong>Bite&amp;Bond</strong>, our mission is to bring people together through the shared love of food and culinary exploration. We provide an interactive space where members can discover new dishes, exchange honest reviews, and learn culinary arts from passionate instructors. We believe that every meal is an opportunity to connect, celebrate diverse flavors, and build lasting friendships around the table.</p>
+        </div>
+
+        <img id="mission" src="images/mission.jpg" alt="mission">
+    </section>
+
+    <!-- Team & Instructors Showcase -->
+    <section class="team-section">
+        <h2>Our team and instructors</h2>
+
+        <div class="team-container">
+
+            <div class="team-card">
+                <img src="images/instructor1.jpg" alt="Instructor photo">
+                <h3><a href="Chef-Kenji-Tanaka.html">Chef Kenji Tanaka</a></h3>
+                <p>Japanese Cuisine Instructor</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/leader.jpg" alt="Leader photo">
+                <h3><a href="Sarah-Jenkins.html">Sarah Jenkins</a></h3>
+                <p>Club Founder &amp; Leader</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/instructor2.jpg" alt="Instructor photo">
+                <h3><a href="Chef-Han-Seung.html">Chef Han Seung</a></h3>
+                <p>Pastry Instructor</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/instructor3.jpg" alt="Instructor photo">
+                <h3><a href="Chef-Rosemary-Oke.html">Chef Rosemary Oke</a></h3>
+                <p>African Cuisine Instructor</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Join Our Team Application Form -->
+    <section class="join-team-section">
+        <h2>Join Our Team</h2>
+
+        <form id="join-form" action="#" method="POST" enctype="multipart/form-data" novalidate>
+
+            <!-- Photo Upload Input -->
+            <div class="upload-field">
+                <label for="photo" class="upload-btn">Upload photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+
+            <!-- Main Form Input Grid -->
+            <div class="form-grid">
+
+                <div class="form-group">
+                    <label for="name">Name *:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of birth *:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="expertise">Area of expertise *:</label>
+                    <input type="text" id="expertise" name="expertise" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills">Skills *:</label>
+                    <input type="text" id="skills" name="skills" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="education">Education *:</label>
+                    <select id="education" name="education" required>
+                        <option value="" disabled selected>Select your education</option>
+                        <option value="highschool">High School</option>
+                        <option value="bachelor">Bachelor's Degree</option>
+                        <option value="master">Master's Degree</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Form Submission Button -->
+            <div class="form-submit">
+                <input type="submit">
+            </div>
+
+        </form>
+    </section>
+
+	</main>
+    <!-- END MAIN HERE -->
+
+    <!-- Site Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- Branding Column -->
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="images/logo.png" id="footer-logo" alt="Bite&Bond Logo">
+                    <p class="footer-header">Bite&amp;Bond</p>
+                </div>
+                <p>Good Food Brings People Together</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-col">
+                <p class="footer-header">Social Media</p>
+                <ul>
+                    <!-- Icons source: https://icons8.com -->
+                    <li><img src="images/icons8-facebook.png" alt="facebook">FaceBook</li>
+                    <li><img src="images/icons8-Instagram.png" alt="Instagram">Instagram</li>
+                    <li><img src="images/icons8-x.png" alt="x">X</li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-col">
+                <p class="footer-header">Contact us</p>
+                <p>Email: <a href="mailto:info@biteandbond.com">info@biteandbond.com</a></p>
+                <p>Phone Number: <a href="tel:+966000000000">+966 00 000 0000</a></p>
+            </div>
+
+            <!-- Newsletter Subscription -->
+            <div class="footer-col newsletter-col">
+                <p class="footer-header">Newsletter</p>
+                <form action="#" method="POST">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Copyright Notice -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bite&amp;Bond Food Club. All rights reserved</p>
+        </div>
+    </footer>
+	
+	<script src="about.js"></script>
+	<script src="theme.js"></script>
+	
+</body>
+</html>

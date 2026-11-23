@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+	 <title>Manage Activity Instructors</title>
+     <link rel="stylesheet" href="style.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+
+<body>
+     <header>
+	
+		<a href="home.html"><img id="logo" src="images/logo.png" alt="Bite&Bond Logo"></a>
+    
+    <nav>
+            <a href="home.html">Home</a>
+            <a href="about_us.html">About us</a>
+            <a href="club-offerings.html">Club Offerings</a>
+            <a href="learn&cook.html">Learn&amp;Cook</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="community.html">Community</a>
+            <a href="member-dashboard.html">Member Dashboard</a>
+            <a href="manager-dashboard.html" class="active" aria-current="page">Manager Dashboard</a>
+    </nav>
+		
+		
+	</header>
+
+    <nav class="breadcrumbs">
+	  <a href="home.html">Home</a> &gt; 
+	  <a href="manager-dashboard.html">Manager Dashboard</a> &gt;
+      <span>Manage Activity Leaders &amp; Instructors</span>
+    </nav>
+	 
+
+    <main>
+       <!-- Introduction -->
+        <section class="bb-intro">
+            <div>
+                <h1>Activity Leaders &amp; Instructors</h1>
+                <p class="tagline">Good Food Brings People Together!</p>
+                <p>Manage the people who lead and instruct your club activities.</p>
+            </div>
+        </section>
+
+        <!-- Manage Existing Instructors -->
+        <section class="bb-instructors">
+
+            <form action="#" method="get" id="delete-instructors">
+
+                <div class="bb-section-heading">
+                    <h2>Leaders &amp; Instructors</h2>
+
+                    <label for="select-all">
+                        Select All
+                        <input type="checkbox" id="select-all">
+                    </label>
+                </div>
+
+                <div class="bb-flex">
+
+                    <!-- Instructor 1 -->
+                    <div class="bb-person">
+                        <img
+                            src="images/instructor1.jpg"
+                            alt="Chef Kenji Tanaka"
+                        >
+                        <!-- Visually hides the label while keeping it accessible to screen readers. -->
+
+                        <h3>Chef Kenji Tanaka</h3>
+
+                        <label class="visually-hidden" for="instructor-1">
+                            Select Chef Kenji Tanaka
+                        </label>
+
+                        <input
+                            type="checkbox"
+                            id="instructor-1"
+                            name="instructors"
+                            value="1"
+                        >
+                    </div>
+
+                    <!-- Instructor 2 -->
+                    <div class="bb-person">
+                        <img
+                            src="images/instructor2.jpg"
+                            alt="Chef Chef Han Seung"
+                        >
+
+                        <h3>Chef Han Seung</h3>
+
+                        <label class="visually-hidden" for="instructor-2">
+                            Select Chef Han Seung
+                        </label>
+
+                        <input
+                            type="checkbox"
+                            id="instructor-2"
+                            name="instructors"
+                            value="2"
+                        >
+                    </div>
+
+                    <!-- Instructor 3 -->
+                    <div class="bb-person">
+                        <img
+                            src="images/instructor3.jpg"
+                            alt="Chef Rosemary Oke"
+                        >
+
+                        <h3>Chef Rosemary Oke</h3>
+
+                        <label class="visually-hidden" for="instructor-3">
+                            Select Chef Rosemary Oke
+                        </label>
+
+                        <input
+                            type="checkbox"
+                            id="instructor-3"
+                            name="instructors"
+                            value="3"
+                        >
+                    </div>
+                         
+
+                     <!-- Instructor 4 -->
+                    <div class="bb-person">
+                         <img src="images/leader.jpg" alt="Leader photo">
+
+                         <h3>Sarah Jenkins</h3>
+
+                         <label class="visually-hidden" for="instructor-4">
+                          Select Sarah Jenkins
+                         </label>
+
+                         <input
+                         type="checkbox"
+                         id="instructor-4"
+                         name="instructors"
+                          value="4"
+                         >
+                    </div>
+
+
+                </div>
+
+                <div class="bb-align-right">
+                    <button type="submit" class="bb-button">
+                        Delete Selected
+                    </button>
+                </div>
+
+            </form>
+        </section>
+
+          <section class="join-team-section">
+		<h2>Add New Instructor Form</h2>
+
+		<form action="#" method="POST" enctype="multipart/form-data" id="add-instructor-form">
+		
+			<div class="upload-field">
+						<label for="photo" class="upload-btn">Upload photo</label>
+						<input type="file" id="photo" name="photo" accept="image/*">
+			</div>
+
+			<div class="form-grid">
+			
+				<div class="form-group">
+					<label for="name">Name *:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+
+				<div class="form-group">
+					<label for="dob">Date of birth *:</label>
+					<input type="date" id="dob" name="dob" required>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email *:</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+
+				<div class="form-group">
+					<label for="expertise">Area of expertise *:</label>
+					<input type="text" id="expertise" name="expertise" required>
+				</div>
+
+				<div class="form-group">
+					<label for="skills">Skills *:</label>
+					<input type="text" id="skills" name="skills" required>
+				</div>
+
+				<div class="form-group">
+					<label for="education">Education *:</label>
+					<select id="education" name="education" required>
+						<option value="" disabled selected>Select your education</option>
+						<option value="highschool">High School</option>
+						<option value="bachelor">Bachelor's Degree</option>
+						<option value="master">Master's Degree</option>
+						<option value="phd">PhD</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="form-submit">
+				<input type="submit" value="Add Instructor" >
+			</div>
+		</form>
+	</section>
+    </main>
+
+   <footer>
+		<div class="footer-container">
+			
+			<div class="footer-col">
+				<div class="footer-logo">
+					<img src="images/logo.png" id="footer-logo" alt="Bite&Bond Logo">
+					<p class="footer-header">Bite&amp;Bond</p>
+				</div>
+				<p>Good Food Brings People Together</p>
+			</div>
+
+			<div class="footer-col">
+				<p class="footer-header">Social Media</p>
+				<ul>
+					<!-- Icons source: https://icons8.com -->
+					<li><img src="images/icons8-facebook.png" alt="facebook">FaceBook</li>
+					<li><img src="images/icons8-Instagram.png" alt="Instagram">Instagram</li>
+					<li><img src="images/icons8-x.png" alt="x">X</li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<p class="footer-header">Contact us</p>
+				<p>Email: <a href="mailto:info@biteandbond.com">info@biteandbond.com</a></p>
+				<p>Phone Number: <a href="tel:+966000000000">+966 00 000 0000</a></p>
+			</div>
+
+			<div class="footer-col newsletter-col">
+				<p class="footer-header">Newsletter</p>
+				<form action="#" method="POST">
+					<input type="email" placeholder="Enter your email" required>
+					<button type="submit">subscribe</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>&copy; 2026 Bite&amp;Bond Food Club. All rights reserved</p>
+		</div>
+	</footer>
+	<script src="theme.js"></script>
+    <script src="manage-instructors.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata and CSS Stylesheet -->
+    <meta charset="UTF-8">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <!-- Header Navigation Section -->
+    <header>
+        <!-- Logo -->
+        <a href="home.html"><img id="logo" src="images/logo.png" alt="Bite&Bond Logo"></a>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about_us.html">About us</a>
+            <a href="club-offerings.html">Club Offerings</a>
+            <a href="learn&cook.html" class="active" aria-current="page">Learn&amp;Cook</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="community.html">Community</a>
+            <a href="member-dashboard.html">Member Dashboard</a>
+            <a href="manager-dashboard.html">Manager Dashboard</a>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Trail -->
+    <nav class="breadcrumbs">
+        <a href="home.html">Home</a> &gt; 
+        <a href="learn&cook.html">Learn&amp;Cook</a> &gt; 
+        <span>Recipes</span>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="recipes-page">
+
+        <!-- Page Introduction Section -->
+        <section class="explore-recipes">
+            <div>
+                <h2>Recipes</h2>
+                <h1>Explore Recipes</h1>
+                <p>Discover delicious recipes, learn new techniques, and share your favorites with the community.</p>
+            </div>
+
+            <img id="explore-img" src="images/explore-recipes.jpg" alt="Explore Recipes">
+        </section>
+
+        <!-- Recipes Listing Section -->
+        <section class="recipes-list">
+
+            <h2 class="recipes-list-header">Recipes List</h2>
+
+            <!-- Search and Filter Bar -->
+            <div class="recipes-filter-bar">
+                <div class="search-input-box">
+                    <span class="search-icon"><img src="images/magnifying.png" alt=""></span>
+                    <input type="text" placeholder="Search Recipes...">
+                </div>
+
+                <div class="category-select-box">
+                    <select name="category">
+                        <option value="all" selected>All Categories</option>
+                        <option value="main-dishes">Main Dishes</option>
+                        <option value="desserts">Desserts</option>
+                        <option value="appetizers">Appetizers</option>
+                        <option value="healthy">Healthy</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Recipe 1: Chicken Kabsa -->
+            <article id="kabsa" class="recipe-card">
+                <div class="recipe-img">
+                    <img src="images/recipe1.jpg" alt="Dish photo">
+                </div>
+                <div class="recipe-info">
+                    <span class="dish-type">Main Dish</span>
+                    <h2 class="dish-title">Chicken Kabsa</h2>
+
+                    <div class="ingredients">
+                        <h3>Ingredients:</h3>
+                        <ul>
+                            <li>Chicken - 1 kg</li>
+                            <li>Basmati Rice - 2 cups</li>
+                            <li>Onion &amp; Tomato - 1 each</li>
+                            <li>Kabsa Spices - 1 tbsp</li>
+                        </ul>
+                    </div>
+
+                    <div class="instructions">
+                        <h3>Instructions:</h3>
+                        <ol>
+                            <li>Sauté onion, add chicken and spices, then add water and cook until tender.</li>
+                            <li>Add rice to the broth and simmer until fully cooked.</li>
+                        </ol>
+                    </div>
+
+                    <div class="dish-meta">
+                        <span><img src="images/time.png" alt=""> 60m</span>
+                        <span><img src="images/difficulty.png" alt=""> Medium</span>
+                        <span><img src="images/servings.png" alt=""> 5</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 2: Assorted Nigiri Sushi Platter -->
+            <article id="sushi" class="recipe-card">
+                <div class="recipe-img">
+                    <img src="images/recipe2.jpg" alt="Dish photo">
+                </div>
+                <div class="recipe-info">
+                    <span class="dish-type">Appetizers</span>
+                    <h2 class="dish-title">Assorted Nigiri Sushi Platter</h2>
+
+                    <div class="ingredients">
+                        <h3>Ingredients:</h3>
+                        <ul>
+                            <li>Sushi Rice - 2 cups</li>
+                            <li>Sushi Vinegar - 3 tbsp</li>
+                            <li>Fresh Fish Slices (Salmon/Tuna) - 200g</li>
+                            <li>Wasabi &amp; Soy Sauce - to taste</li>
+                        </ul>
+                    </div>
+
+                    <div class="instructions">
+                        <h3>Instructions:</h3>
+                        <ol>
+                            <li>Season cooked rice with vinegar and let cool.</li>
+                            <li>Shape rice into small mounds and top with sliced fish.</li>
+                        </ol>
+                    </div>
+
+                    <div class="dish-meta">
+                        <span><img src="images/time.png" alt=""> 45m</span>
+                        <span><img src="images/difficulty.png" alt=""> Hard</span>
+                        <span><img src="images/servings.png" alt=""> 2</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 3: Decadent Chocolate Fudge Cake -->
+            <article id="cake" class="recipe-card">
+                <div class="recipe-img">
+                    <img src="images/recipe3.jpg" alt="Fudge Cake">
+                </div>
+                <div class="recipe-info">
+                    <span class="dish-type">Dessert</span>
+                    <h2 class="dish-title">Decadent Chocolate Fudge Cake</h2>
+
+                    <div class="ingredients">
+                        <h3>Ingredients:</h3>
+                        <ul>
+                            <li>Flour &amp; Sugar - 2 cups each</li>
+                            <li>Cocoa Powder - 3/4 cup</li>
+                            <li>Eggs - 2</li>
+                            <li>Butter &amp; Chocolate - 1 cup each</li>
+                        </ul>
+                    </div>
+
+                    <div class="instructions">
+                        <h3>Instructions:</h3>
+                        <ol>
+                            <li>Mix dry and wet ingredients, then bake at 175°C for 30-35 mins.</li>
+                            <li>Melt chocolate with butter to make fudge frosting and coat the cooled cake.</li>
+                        </ol>
+                    </div>
+
+                    <div class="dish-meta">
+                        <span><img src="images/time.png" alt=""> 2h</span>
+                        <span><img src="images/difficulty.png" alt=""> Medium</span>
+                        <span><img src="images/servings.png" alt=""> 8</span>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Site Footer Section -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- Footer Branding -->
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="images/logo.png" id="footer-logo" alt="Bite&Bond Logo">
+                    <p class="footer-header">Bite&amp;Bond</p>
+                </div>
+                <p>Good Food Brings People Together</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-col">
+                <p class="footer-header">Social Media</p>
+                <ul>
+                    <!-- Icons source: https://icons8.com -->
+                    <li><img src="images/icons8-facebook.png" alt="facebook">FaceBook</li>
+                    <li><img src="images/icons8-Instagram.png" alt="Instagram">Instagram</li>
+                    <li><img src="images/icons8-x.png" alt="x">X</li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="footer-col">
+                <p class="footer-header">Contact us</p>
+                <p>Email: <a href="mailto:info@biteandbond.com">info@biteandbond.com</a></p>
+                <p>Phone Number: <a href="tel:+966000000000">+966 00 000 0000</a></p>
+            </div>
+
+            <!-- Newsletter Subscription Form -->
+            <div class="footer-col newsletter-col">
+                <p class="footer-header">Newsletter</p>
+                <form action="#" method="POST">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Footer Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bite&amp;Bond Food Club. All rights reserved</p>
+        </div>
+    </footer>
+
+	<script src="community_pages.js"></script>
+	<script src="theme.js"></script>
+	
+</body>
+</html>

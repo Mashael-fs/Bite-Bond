@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Request to Join an Offering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="home.html">
+            <img
+                id="logo"
+                src="images/logo.png"
+                alt="Bite&Bond Logo"
+            >
+        </a>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about_us.html">About us</a>
+            <a href="club-offerings.html">Club Offerings</a>
+            <a href="learn&cook.html">Learn&amp;Cook</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="community.html">Community</a>
+            <a href="member-dashboard.html" class="active" aria-current="page">Member Dashboard</a>
+            <a href="manager-dashboard.html">Manager Dashboard</a>
+        </nav>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="home.html">Home</a> &gt;
+            <a href="member-dashboard.html">Member Dashboard</a> &gt;
+            <span>Request to Join an Offering</span>
+    </nav>
+    <main>
+     <section class="bb-intro">
+        <div>
+            <p class="kicker">Good Food Brings People Together!</p>
+            <h1>Request to Join an Offering</h1>
+            <p>Choose an Activity and submit your participation request.</p>
+        </div>
+
+        <img
+            src="images/request-to-join.png"
+            alt="Request to join an offering illustration"
+        >
+     </section>
+
+     <div class="bb-two-panels">
+
+        <section class="bb-panel">
+            <div class="bb-panel-head">
+                <img src="images/request-icon.png" alt="">
+                <h2>Participation Request</h2>
+            </div>
+
+            <p class="bb-panel-note">
+                Fill in the details below...
+            </p>
+
+            <div class="bb-panel-content">
+                <form action="#" method="get" id="join-form" novalidate>
+
+                    <div class="bb-field">
+                        <label for="offering">Select Offering *</label>
+                        <select id="offering" name="offering" required>
+                            <option value="">-- Choose an offering --</option>
+                            <option value="pasta">
+                                Italian Pasta Workshop
+                            </option>
+                            <option value="bbq">
+                                Gourmet BBQ &amp; Steak Grill
+                            </option>
+                            <option value="pastry">
+                                French Pastry Basics
+                            </option>
+                            <option value="pizza">
+                                Wood-Fired Pizza Making
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="bb-field">
+                        <label for="fullname">Full Name *</label>
+                        <input
+                            id="fullname"
+                            name="fullname"
+                            type="text"
+                            placeholder="Enter your full name"
+                            required
+                            autocomplete="name"
+                        >
+                    </div>
+
+                    <div class="bb-field">
+                        <label for="preferred-date">Preferred Date *</label>
+                        <input
+                            id="preferred-date"
+                            name="preferred-date"
+                            type="date"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" class="bb-button">
+                        Submit Request
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+        <section class="bb-panel bb-preview">
+            <div class="bb-panel-head">
+                <img src="images/preview-icon.png" alt="">
+                <h2>Offering Preview</h2>
+            </div>
+
+            <p class="bb-panel-note">
+                Sample offering preview for Phase 2.
+            </p>
+
+            <div id="offering-content" class="bb-details">
+                <img
+                    src="images/pasta-workshop.png"
+                    class="detail-image"
+                    alt="Italian Pasta Workshop"
+                >
+
+                <h3 class="detail-title">
+                    Italian Pasta Workshop
+                </h3>
+
+                 <p>
+                    <img src="images/location2.png" class="bb-detail-icon" alt="Location">
+                        Location:
+                        <span class="detail-location">
+                            Bite&amp;Bond Kitchen, Riyadh
+                        </span>
+                    </p>
+
+                <p class="detail-description">
+                    Learn to prepare fresh handmade pasta.
+                </p>
+                <hr>
+
+                   
+
+                    <p>
+                        <img src="images/date.png" class="bb-detail-icon" alt="date and time">
+                        Date &amp; Time:
+                        <span class="detail-date">
+                            24 October 2026, 4:00 PM
+                        </span>
+                    </p>
+
+                    <p>
+                        <img src="images/fee.png" class="bb-detail-icon" alt="fee">
+                        Fee:
+                        <span class="detail-fee">250 SAR</span>
+                    </p>
+
+                    <p>
+                        <img src="images/seat.png" class="bb-detail-icon" alt="seats">
+                        Seats Available:
+                        <span class="detail-seats">12</span>
+                    </p>
+
+                               </div>
+        </section>
+     </div>
+
+     <section class="bb-panel" id="requests-section">
+    <h2>Submitted Requests</h2>
+    <div id="requests-list"></div>
+</section>
+    </main>
+
+   <footer>
+		<div class="footer-container">
+			
+			<div class="footer-col">
+				<div class="footer-logo">
+					<img src="images/logo.png" id="footer-logo" alt="Bite&Bond Logo">
+					<p class="footer-header">Bite&amp;Bond</p>
+				</div>
+				<p>Good Food Brings People Together</p>
+			</div>
+
+			<div class="footer-col">
+				<p class="footer-header">Social Media</p>
+				<ul>
+					<!-- Icons source: https://icons8.com -->
+					<li><img src="images/icons8-facebook.png" alt="facebook">FaceBook</li>
+					<li><img src="images/icons8-Instagram.png" alt="Instagram">Instagram</li>
+					<li><img src="images/icons8-x.png" alt="x">X</li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<p class="footer-header">Contact us</p>
+				<p>Email: <a href="mailto:info@biteandbond.com">info@biteandbond.com</a></p>
+				<p>Phone Number: <a href="tel:+966000000000">+966 00 000 0000</a></p>
+			</div>
+
+			<div class="footer-col newsletter-col">
+				<p class="footer-header">Newsletter</p>
+				<form action="#" method="POST">
+					<input type="email" placeholder="Enter your email" required>
+					<button type="submit">subscribe</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>&copy; 2026 Bite&amp;Bond Food Club. All rights reserved</p>
+		</div>
+	</footer>
+	<script src="theme.js"></script>
+    <script src="request-to-join.js"></script>
+
+</body>
+</html>

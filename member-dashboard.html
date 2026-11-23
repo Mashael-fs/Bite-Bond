@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+	 <title>Club Member Dashboard</title>
+     <link rel="stylesheet" href="style.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+
+<body>
+	
+	<header>
+	
+		<a href="home.html"><img id="logo" src="images/logo.png" alt="Bite&Bond Logo" ></a>
+    
+    <nav>
+        
+         <a href="home.html">Home</a>
+         <a href="about_us.html">About us</a>
+         <a href="club-offerings.html">Club Offerings</a>
+         <a href="learn&cook.html">Learn&amp;Cook</a>
+         <a href="restaurants.html">Restaurants</a>
+         <a href="community.html">Community</a>
+         <a href="member-dashboard.html" class="active" aria-current="page">Member Dashboard</a>
+         <a href="manager-dashboard.html">Manager Dashboard</a>
+        
+    </nav>
+		
+		
+	</header>
+	
+	<nav class="breadcrumbs">
+	  <a href="home.html">Home</a> &gt; 
+	  <span>Member Dashboard</span>
+    </nav>
+    <main>
+	
+	<section class="bb-intro">
+    <div>
+        <h1>Club Member Dashboard</h1>
+        <p>Good Food Brings People Together!</p>
+        <p>Track your participation requests and manage your club activities.</p>
+    </div>
+
+    <img src="images/member-dashboard.png"
+         alt="Checklist illustration for participation requests"
+         >
+</section>
+
+<!-- Request Summary -->
+        <section class="bb-stats" aria-label="Request summary">
+
+            <div>
+                <h2>Total Requests</h2>
+                <strong>4</strong>
+                <img src="images/request-icon.png" alt="">
+            </div>
+
+            <div>
+                <h2>Pending</h2>
+                <strong>1</strong>
+                <img src="images/request-icon.png" alt="">
+            </div>
+
+            <div>
+                <h2>Completed</h2>
+                <strong>2</strong>
+                <img src="images/request-icon.png" alt="">
+            </div>
+
+            <div>
+                <h2>Declined</h2>
+                <strong>1</strong>
+                <img src="images/request-icon.png" alt="">
+            </div>
+
+            <!-- Member Dashboard Navigation Links -->
+        <section class="bb-member-links">
+
+        <a class="bb-button" href="request-to-join.html">
+        Request to Join an Offering
+        </a>
+
+         <a class="bb-button" href="offering-evaluation.html">
+        Offering Evaluation
+         </a>
+
+</section>
+
+        </section>
+
+<!-- My Participation Requests -->
+        <section class="bb-panel bb-list">
+
+            <h2>My Participation Requests</h2>
+
+            <div class="bb-list-body">
+
+                <!-- Offering 1 -->
+                <article class="bb-row">
+
+                    <img
+                        src="images/pasta-workshop.png"
+                        alt="Italian Pasta Workshop"
+                    >
+
+                    <div class="bb-row-name">
+                        <h3>Italian Pasta Workshop</h3>
+                        <span>Request Date</span>
+                        <p>10/10/2026</p>
+                    </div>
+
+                    <div>
+                        Cost
+                        <p>250 SAR</p>
+                    </div>
+
+                    <div>
+                        Status
+                        <p>
+                            <span class="bb-status completed">Completed</span>
+                        </p>
+                    </div>
+
+                    <div class="bb-row-actions">
+                        
+
+                        <a class="bb-button secondary" href="offering-evaluation.html">
+                            Evaluate
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Offering 2 -->
+                <article class="bb-row">
+
+                    <img
+                        src="images/BBQ-Steak-Grill.png"
+                        alt="Gourmet BBQ &amp; Steak Grill"
+                    >
+
+                    <div class="bb-row-name">
+                        <h3>Gourmet BBQ &amp; Steak Grill</h3>
+                        <span>Request Date</span>
+                        <p>18/10/2026</p>
+                    </div>
+
+                    <div>
+                        Cost
+                        <p>350 SAR</p>
+                    </div>
+
+                    <div>
+                        Status
+                        <p>
+                            <span class="bb-status pending">Pending</span>
+                        </p>
+                    </div>
+
+                    <div class="bb-row-actions">
+                        
+                    </div>
+
+                </article>
+
+                <!-- Offering 3 -->
+                <article class="bb-row">
+
+                    <img
+                        src="images/french-pastry.png"
+                        alt="French Pastry Basics"
+                    >
+
+                    <div class="bb-row-name">
+                        <h3>French Pastry Basics</h3>
+                        <span>Request Date</span>
+                        <p>12/10/2026</p>
+                    </div>
+
+                    <div>
+                        Cost
+                        <p>280 SAR</p>
+                    </div>
+
+                    <div>
+                        Status
+                        <p>
+                            <span class="bb-status completed">Completed</span>
+                        </p>
+                    </div>
+
+                    <div class="bb-row-actions">
+                        
+
+                        <a class="bb-button secondary" href="offering-evaluation.html">
+                            Evaluate
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- Offering 4 -->
+                <article class="bb-row">
+
+                    <img
+                        src="images/Wood-Fired-Pizza.png"
+                        alt="Wood-Fired Pizza Making"
+                    >
+
+                    <div class="bb-row-name">
+                        <h3>Wood-Fired Pizza Making</h3>
+                        <span>Request Date</span>
+                        <p>16/10/2026</p>
+                    </div>
+
+                    <div>
+                        Cost
+                        <p>200 SAR</p>
+                    </div>
+
+                    <div>
+                        Status
+                        <p>
+                            <span class="bb-status declined">Declined</span>
+                        </p>
+                    </div>
+
+                    <div class="bb-row-actions">
+                        
+                    </div>
+
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+	<footer>
+		<div class="footer-container">
+			
+			<div class="footer-col">
+				<div class="footer-logo">
+					<img src="images/logo.png" id="footer-logo" alt="Bite&Bond Logo">
+					<p class="footer-header">Bite&amp;Bond</p>
+				</div>
+				<p>Good Food Brings People Together</p>
+			</div>
+
+			<div class="footer-col">
+				<p class="footer-header">Social Media</p>
+				<ul>
+					<!-- Icons source: https://icons8.com -->
+					<li><img src="images/icons8-facebook.png" alt="facebook">FaceBook</li>
+					<li><img src="images/icons8-Instagram.png" alt="Instagram">Instagram</li>
+					<li><img src="images/icons8-x.png" alt="x">X</li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<p class="footer-header">Contact us</p>
+				<p>Email: <a href="mailto:info@biteandbond.com">info@biteandbond.com</a></p>
+				<p>Phone Number: <a href="tel:+966000000000">+966 00 000 0000</a></p>
+			</div>
+
+			<div class="footer-col newsletter-col">
+				<p class="footer-header">Newsletter</p>
+				<form action="#" method="POST">
+					<input type="email" placeholder="Enter your email" required>
+					<button type="submit">subscribe</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>&copy; 2026 Bite&amp;Bond Food Club. All rights reserved</p>
+		</div>
+	</footer>
+
+
+
+
+
+<script src="theme.js"></script>
+
+</body>
+</html>

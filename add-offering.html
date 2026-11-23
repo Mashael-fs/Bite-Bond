@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+	 <title>Add New Offering</title>
+     <link rel="stylesheet" href="style.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+
+<body>
+     <header>
+	
+		<a href="home.html"><img id="logo" src="images/logo.png" alt="Bite&Bond Logo"></a>
+    
+    <nav>
+            <a href="home.html">Home</a>
+            <a href="about_us.html">About us</a>
+            <a href="club-offerings.html">Club Offerings</a>
+            <a href="learn&cook.html">Learn&amp;Cook</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="community.html">Community</a>
+            <a href="member-dashboard.html">Member Dashboard</a>
+            <a href="manager-dashboard.html" class="active" aria-current="page">Manager Dashboard</a>
+    </nav>
+		
+		
+	</header>
+
+
+    <nav class="breadcrumbs">
+	  <a href="home.html">Home</a> &gt; 
+	  <a href="manager-dashboard.html">Manager Dashboard</a>&gt;
+      <span>Add New Offering</span>
+    </nav>
+	  
+
+     <main>
+
+        <!-- Introduction -->
+        <section class="bb-intro">
+            <div>
+                <p class="kicker">Good Food Brings People Together!</p>
+                <h1>Add New Offering</h1>
+                <p>Add your new offering details below.</p>
+            </div>
+
+            <img
+                src="images/addOffering.png"
+                alt="Cooking with Bite and Bond"
+            >
+        </section>
+
+        <!-- Add Offering Form -->
+        <section class="bb-panel bb-add-panel">
+
+            <div class="bb-panel-head">
+                <img src="images/addform.png" alt="">
+                <h2>Add Offering Form</h2>
+            </div>
+
+            <div class="bb-panel-content">
+
+                <form action="#" method="get" id="add-offering-form">
+
+                    <div class="bb-narrow-fields">
+
+                        <!-- Offering Name -->
+                        <div class="bb-field">
+                            <label for="offering-name">Offering Name *</label>
+
+                            <input
+                                type="text"
+                                id="offering-name"
+                                name="offering-name"
+                                placeholder="Enter Offering name"
+                                required
+                            >
+                        </div>
+
+                        <!-- Offering Image -->
+                        <div class="bb-field">
+                            <label for="offering-image">Image *</label>
+
+                            <input
+                                type="file"
+                                id="offering-image"
+                                name="offering-image"
+                                accept="image/*"
+                                required
+                            >
+                        </div>
+
+                        <!-- Offering Price -->
+                        <div class="bb-field">
+                            <label for="offering-price">Price *</label>
+
+                            <input
+                                type="number"
+                                id="offering-price"
+                                name="offering-price"
+                                placeholder="0.00"
+                                min="0"
+                                step="0.01"
+                                required
+                            >
+                        </div>
+
+                        <!-- Offering Description -->
+                        <div class="bb-field">
+                            <label for="offering-description">Description *</label>
+
+                            <textarea
+                                id="offering-description"
+                                name="offering-description"
+                                placeholder="Enter description..."
+                                required
+                            ></textarea>
+                        </div>
+
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="bb-actions">
+                        <button type="submit" class="bb-button">
+                            Add Offering
+                        </button>
+
+                        <a class="bb-button secondary" href="manager-dashboard.html">
+                            Cancel
+                        </a>
+                    </div>
+
+                </form>
+
+                <hr>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+		<div class="footer-container">
+			
+			<div class="footer-col">
+				<div class="footer-logo">
+					<img src="images/logo.png" id="footer-logo" alt="Bite&Bond Logo">
+					<p class="footer-header">Bite&amp;Bond</p>
+				</div>
+				<p>Good Food Brings People Together</p>
+			</div>
+
+			<div class="footer-col">
+				<p class="footer-header">Social Media</p>
+				<ul>
+					<!-- Icons source: https://icons8.com -->
+					<li><img src="images/icons8-facebook.png" alt="facebook">FaceBook</li>
+					<li><img src="images/icons8-Instagram.png" alt="Instagram">Instagram</li>
+					<li><img src="images/icons8-x.png" alt="x">X</li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<p class="footer-header">Contact us</p>
+				<p>Email: <a href="mailto:info@biteandbond.com">info@biteandbond.com</a></p>
+				<p>Phone Number: <a href="tel:+966000000000">+966 00 000 0000</a></p>
+			</div>
+
+			<div class="footer-col newsletter-col">
+				<p class="footer-header">Newsletter</p>
+				<form action="#" method="POST">
+					<input type="email" placeholder="Enter your email" required>
+					<button type="submit">subscribe</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>&copy; 2026 Bite&amp;Bond Food Club. All rights reserved</p>
+		</div>
+	</footer> 
+	<script src="theme.js"></script>
+    <script src="add-offering.js"></script>
+
+
+    
+</body>
+</html>
